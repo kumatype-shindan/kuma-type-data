@@ -1,0 +1,113 @@
+{
+  "images": [
+    {
+      "alt": "Boy sample",
+      "src": "/images/kuma/00-boy-sample.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%9E%E3%81%A3%E3%81%93%E3%82%93%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=128&q=75&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Girl sample",
+      "src": "/images/kuma/01-girl-sample.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%9E%E3%81%A3%E3%81%93%E3%82%93%E3%83%99%E3%82%A2%E3%83%BC_%E5%A5%B3.png&w=128&q=75&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "HeavyBear keychains, all 16 types",
+      "src": "/images/kuma/02-heavybear-keychains-all-16-types.jpg",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2F%E3%81%B8%E3%81%B3%E3%81%B9%E3%81%82%E3%81%AC%E3%81%84%E3%83%9B%E3%83%AB%E3%83%80%E3%83%BC%2F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%83%A0%E3%83%8D.jpg&w=640&q=75&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Stare Bear",
+      "src": "/images/kuma/03-stare-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%82%AC%E3%83%B3%E8%A6%8B%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Own-Path Bear",
+      "src": "/images/kuma/04-own-path-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E6%88%91%E3%81%8C%E9%81%93%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Boss Bear",
+      "src": "/images/kuma/05-boss-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%82%AA%E3%83%AC%E3%81%95%E3%81%BE%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Fuss Bear",
+      "src": "/images/kuma/06-fuss-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%8B%E3%81%BE%E3%81%84%E3%81%99%E3%81%8E%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Smitten Bear",
+      "src": "/images/kuma/07-smitten-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%9E%E3%81%A3%E3%81%93%E3%82%93%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Dreamy Bear",
+      "src": "/images/kuma/08-dreamy-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E5%A4%A2%E8%A6%8B%E3%81%8C%E3%81%A1%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Caretaker Bear",
+      "src": "/images/kuma/09-caretaker-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E4%B8%96%E8%A9%B1%E7%84%BC%E3%81%8D%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Love-Burst Bear",
+      "src": "/images/kuma/10-love-burst-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E6%84%9B%E7%82%B8%E8%A3%82%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Contrary Bear",
+      "src": "/images/kuma/11-contrary-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%82%E3%81%BE%E3%81%AE%E3%81%98%E3%82%83%E3%81%8F%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Reserved Bear",
+      "src": "/images/kuma/12-reserved-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%82%80%E3%81%A3%E3%81%A4%E3%82%8A%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Little Devil Bear",
+      "src": "/images/kuma/13-little-devil-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E5%B0%8F%E6%82%AA%E9%AD%94%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Straight-Up Bear",
+      "src": "/images/kuma/14-straight-up-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%83%89%E7%9B%B4%E7%90%83%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Decisive Bear",
+      "src": "/images/kuma/15-decisive-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%8D%E3%82%81%E3%81%9F%E3%81%8C%E3%82%8A%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Caring Bear",
+      "src": "/images/kuma/16-caring-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E3%81%8A%E3%81%9B%E3%81%A3%E3%81%8B%E3%81%84%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Promise-Keeper Bear",
+      "src": "/images/kuma/17-promise-keeper-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E7%B4%84%E6%9D%9F%E7%B5%B6%E5%AF%BE%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "alt": "Illustration of Beloved Bear",
+      "src": "/images/kuma/18-beloved-bear.png",
+      "source": "https://kuma-16-type.vercel.app/_next/image?url=%2Fkuma-illust%2F%E6%84%9B%E3%81%95%E3%82%8C%E3%83%99%E3%82%A2%E3%83%BC_%E7%94%B7.png&w=96&q=60&dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "mplus-400.woff2",
+      "url": "https://kuma-16-type.vercel.app/_next/static/media/mplus_400-s.p.15hhp1f3bb50v.woff2?dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "name": "mplus-500.woff2",
+      "url": "https://kuma-16-type.vercel.app/_next/static/media/mplus_500-s.p.10m96tfpz8c6q.woff2?dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    },
+    {
+      "name": "mplus-700.woff2",
+      "url": "https://kuma-16-type.vercel.app/_next/static/media/mplus_700-s.p.0rff__in6d~03.woff2?dpl=dpl_EtaLNDDoQwRMKs45ftVeDL67QMYG"
+    }
+  ]
+}

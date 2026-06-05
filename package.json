@@ -1,0 +1,19 @@
+{
+  "name": "kuma-type-data",
+  "version": "1.0.0",
+  "description": "Public data, assets, and scoring rules for the Kuma Type Shindan guide.",
+  "type": "module",
+  "private": false,
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "audit:public": "node tests/public-boundary.test.mjs"
+  },
+  "keywords": [
+    "kuma",
+    "love-type",
+    "personality-quiz",
+    "compatibility",
+    "japanese"
+  ]
+}
