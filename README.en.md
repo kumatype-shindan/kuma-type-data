@@ -4,9 +4,12 @@
   </a>
 </p>
 
-# Kuma Type Shindan Data
-
-[日本語](README.md) | English | [简体中文](README.zh-CN.md)
+<h1>
+  Kuma Type Shindan Data
+  <a href="README.zh-CN.md"><img align="right" alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-README-ff8fab?style=flat-square"></a>
+  <a href="README.en.md"><img align="right" alt="English" src="https://img.shields.io/badge/English-current-f48fb1?style=flat-square"></a>
+  <a href="README.md"><img align="right" alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-README-ff8fab?style=flat-square"></a>
+</h1>
 
 This is an English translation. If it differs from the Japanese README, the Japanese version is authoritative.
 
@@ -65,7 +68,7 @@ Additional public screenshots are available for the [16 type list](assets/screen
 | Destination | Link |
 | --- | --- |
 | Official English quiz website | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
-| Japanese main website | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
+| Japanese main website | [恋するへびべあ診断](https://kumatype-shindan.xyz) |
 | English 16 type hub | [Kuma 16 type result list](https://kumatype-shindan.xyz/en/types) |
 | English compatibility tool | [Kuma compatibility score tool](https://kumatype-shindan.xyz/en/compatibility) |
 | Primary GitHub repository | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |

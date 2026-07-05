@@ -4,13 +4,16 @@
   </a>
 </p>
 
-# Kuma Type Shindan データ
-
-日本語 | [English](README.en.md) | [简体中文](README.zh-CN.md)
+<h1>
+  Kuma Type Shindan データ
+  <a href="README.zh-CN.md"><img align="right" alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-README-ff8fab?style=flat-square"></a>
+  <a href="README.en.md"><img align="right" alt="English" src="https://img.shields.io/badge/English-README-ff8fab?style=flat-square"></a>
+  <a href="README.md"><img align="right" alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-current-f48fb1?style=flat-square"></a>
+</h1>
 
 この日本語 README が公式基準です。翻訳版との差異がある場合は、この日本語版を優先します。
 
-Kuma Type Shindan データは、独立したクイズ・参考サイト [Kuma Type Shindan](https://kumatype-shindan.xyz) の公開データ、画像アセット、スコアリングルールを確認するためのリポジトリです。開発者、クイズ制作者、翻訳レビュー担当者、利用者が、20問の Kuma 恋愛タイプ診断、16種類のベアタイプ、タイプ一覧、相性スコア、公開参考アセットを確認できます。
+Kuma Type Shindan データは、独立したクイズ・参考サイト [恋するへびべあ診断](https://kumatype-shindan.xyz) の公開データ、画像アセット、スコアリングルールを確認するためのリポジトリです。開発者、クイズ制作者、翻訳レビュー担当者、利用者が、20問の Kuma 恋愛タイプ診断、16種類のベアタイプ、タイプ一覧、相性スコア、公開参考アセットを確認できます。
 
 これは Next.js で動く本番サイト全体のソースコードではありません。デプロイ設定、環境変数、アナリティクス、決済コード、内部 UI コンポーネント、非公開の運用資料は含みません。
 
@@ -64,10 +67,10 @@ npm test
 
 | 目的 | リンク |
 | --- | --- |
-| 公式診断サイト | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
+| 公式診断サイト | [恋するへびべあ診断](https://kumatype-shindan.xyz) |
 | 英語版ホーム | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
-| 16タイプ一覧 | [Kuma 16タイプ一覧](https://kumatype-shindan.xyz/types) |
-| 相性診断 | [Kuma 相性スコア診断](https://kumatype-shindan.xyz/compatibility) |
+| 16タイプ一覧 | [くまタイプ診断 MBTI 16タイプ一覧](https://kumatype-shindan.xyz/types) |
+| 相性診断 | [くまタイプ相性一覧](https://kumatype-shindan.xyz/compatibility) |
 | 主 GitHub リポジトリ | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
 | サポート案内 | [SUPPORT.md](SUPPORT.md) |
 | セキュリティ報告 | [SECURITY.md](SECURITY.md) |

@@ -4,13 +4,16 @@
   </a>
 </p>
 
-# Kuma Type Shindan 数据
-
-[日本語](README.md) | [English](README.en.md) | 简体中文
+<h1>
+  Kuma Type Shindan 数据
+  <a href="README.zh-CN.md"><img align="right" alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-current-f48fb1?style=flat-square"></a>
+  <a href="README.en.md"><img align="right" alt="English" src="https://img.shields.io/badge/English-README-ff8fab?style=flat-square"></a>
+  <a href="README.md"><img align="right" alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-README-ff8fab?style=flat-square"></a>
+</h1>
 
 这是简体中文翻译。如果内容和日文 README 不一致，以日文版本为准。Kuma Type Shindan 目前没有中文官网页面，所以本 README 的官网入口会链接到日文主页面。
 
-Kuma Type Shindan 数据仓库收录了独立诊断与参考站点 [Kuma Type Shindan](https://kumatype-shindan.xyz) 的公开数据、图片素材和计分规则。开发者、测试作者、翻译审校者和用户可以在这里检查 20 题 Kuma 恋爱类型诊断、16 个熊类型记录、结果列表、相性分数和公开参考素材。
+Kuma Type Shindan 数据仓库收录了独立诊断与参考站点 [恋するへびべあ診断（日文主站）](https://kumatype-shindan.xyz) 的公开数据、图片素材和计分规则。开发者、测试作者、翻译审校者和用户可以在这里检查 20 题 Kuma 恋爱类型诊断、16 个熊类型记录、结果列表、相性分数和公开参考素材。
 
 这不是完整的 Next.js 网站源码。仓库不包含部署配置、环境变量、统计分析、支付代码、内部 UI 组件或私有运营资料。
 
@@ -64,10 +67,10 @@ npm test
 
 | 目的 | 链接 |
 | --- | --- |
-| 官网首页（日文主语言） | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
+| 官网首页（日文主语言） | [恋するへびべあ診断（日文主站）](https://kumatype-shindan.xyz) |
 | 英文首页 | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
-| 16 类型列表（日文主语言） | [Kuma 16 类型列表](https://kumatype-shindan.xyz/types) |
-| 相性诊断（日文主语言） | [Kuma 相性分数诊断](https://kumatype-shindan.xyz/compatibility) |
+| 16 类型列表（日文主语言） | [くまタイプ診断 MBTI 16タイプ一覧](https://kumatype-shindan.xyz/types) |
+| 相性诊断（日文主语言） | [くまタイプ相性一覧](https://kumatype-shindan.xyz/compatibility) |
 | 主 GitHub 仓库 | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
 | 支持说明 | [SUPPORT.md](SUPPORT.md) |
 | 安全报告说明 | [SECURITY.md](SECURITY.md) |
