@@ -6,9 +6,49 @@
 
 # Kuma Type Shindan Data
 
-Public data, image assets, and scoring rules for the independent [Kuma Type Shindan guide](https://kumatype-shindan.xyz). This repository is for people who want to inspect the 20-question Kuma love-type scoring model, the 16 bear-type records, compatibility rules, and public reference assets without receiving the private website application source.
+Public data, image assets, and scoring rules for the independent [Kuma Type Shindan guide](https://kumatype-shindan.xyz). This repository lets developers, quiz writers, localization reviewers, and users inspect how the guide represents the 20-question love-type model, the 16 bear-type records, compatibility rules, and public reference assets.
 
 This is not the full Next.js website source. It does not include deployment configuration, environment files, analytics setup, payment code, internal UI components, or private operational material.
+
+## Why This Repository Exists
+
+Kuma Type Shindan is a browser guide, but the quiz data and scoring behavior should be easy to inspect without exposing the private production application. This public package provides:
+
+- Transparent question, type, compatibility, and scoring data.
+- Public image and screenshot references for documentation review.
+- A small scoring helper that reproduces the published result behavior.
+- Tests that keep the public package shape and private-source boundary stable.
+- A safe issue route for data corrections, documentation fixes, and public asset feedback.
+
+## Data And Tool Catalog
+
+| Resource | Purpose | Key Detail | Link |
+| --- | --- | --- | --- |
+| Questions | Quiz model review | 20 public questions with axis and positive-pole metadata | [questions.json](data/questions.json) |
+| Kuma types | Result content review | 16 type records with names, slugs, descriptions, traits, groups, and compatibility links | [kuma-types.json](data/kuma-types.json) |
+| Asset manifest | Public asset audit | Image and font source metadata carried over from the guide project | [asset-manifest.json](data/asset-manifest.json) |
+| Scoring helper | Result reproduction | Public JavaScript helper for result and compatibility calculations | [scoring.mjs](src/scoring.mjs) |
+| Scoring docs | Human-readable rules | Axis scoring, tie behavior, compatibility scoring, and labels | [scoring documentation](docs/scoring.md) |
+| Boundary docs | Public/private split | What this repository intentionally includes and excludes | [public boundary](docs/public-boundary.md) |
+| Public checks | Regression safety | Node tests for scoring and repository boundary expectations | [tests](tests) |
+
+## Use Cases
+
+- Inspect which question maps to which `EI`, `SN`, `TF`, or `JP` axis.
+- Reproduce the result-code calculation outside the live website.
+- Review all 16 Kuma type records and public compatibility relationships.
+- Check why a neutral answer set resolves to `INFP`.
+- Report public data, documentation, or asset-reference corrections without posting private account or security details.
+
+## Getting Started In 3 Steps
+
+1. Review the data files in [data](data), especially [questions.json](data/questions.json) and [kuma-types.json](data/kuma-types.json).
+2. Read [docs/scoring.md](docs/scoring.md) or import [src/scoring.mjs](src/scoring.mjs) to reproduce the result behavior.
+3. Run the public checks before proposing data or scoring changes:
+
+```bash
+npm test
+```
 
 ## Visual Preview
 
@@ -19,19 +59,7 @@ This is not the full Next.js website source. It does not include deployment conf
 | Compatibility tool | ![Kuma Type Shindan compatibility tool](assets/screenshots/compatibility-mobile.png) |
 | Result page | ![Kuma Type Shindan result page](assets/screenshots/result-mobile.png) |
 
-## Repository Contents
-
-| Resource | Description |
-| --- | --- |
-| [questions.json](data/questions.json) | The 20 public quiz questions with axis and positive-pole metadata. |
-| [kuma-types.json](data/kuma-types.json) | All 16 Kuma type records, including names, slugs, descriptions, groups, result images, traits, and primary compatibility links. |
-| [asset-manifest.json](data/asset-manifest.json) | Public image and font source metadata carried over from the guide project. |
-| [scoring.mjs](src/scoring.mjs) | Open scoring and compatibility helper implementation. |
-| [assets/images/kuma](assets/images/kuma) | Public Kuma type, result, and product-reference images used by the guide. |
-| [scoring documentation](docs/scoring.md) | Human-readable explanation of the result and compatibility calculations. |
-| [public boundary](docs/public-boundary.md) | What this repository intentionally includes and excludes. |
-
-## Links
+## Official Links
 
 | Destination | Link |
 | --- | --- |
@@ -40,8 +68,26 @@ This is not the full Next.js website source. It does not include deployment conf
 | 16 type hub | [Kuma Type 16 results list](https://kumatype-shindan.xyz/types) |
 | Compatibility guide | [Kuma Type compatibility tool](https://kumatype-shindan.xyz/compatibility) |
 | Primary GitHub repository | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
+| Public support guide | [SUPPORT.md](SUPPORT.md) |
+| Security reporting guide | [SECURITY.md](SECURITY.md) |
 
-## Scoring Summary
+## Official Mirrors
+
+GitHub is the canonical public repository. Mirrors exist for platform-specific discovery and public-safe feedback routes.
+
+| Platform | Link | Purpose |
+| --- | --- | --- |
+| GitHub | [kumatype-shindan/kuma-type-data](https://github.com/kumatype-shindan/kuma-type-data) | Canonical public data package |
+| GitLab | [nano-products/kuma-type-data on GitLab](https://gitlab.com/nano-products/kuma-type-data) | GitLab mirror and issue context |
+| Codeberg | [nano-products/kuma-type-data on Codeberg](https://codeberg.org/nano-products/kuma-type-data) | Forgejo/Codeberg discovery mirror |
+| Gitee | [kuma-type-data on Gitee](https://gitee.com/nano-products/kuma-type-data) | Chinese platform mirror |
+| GitCode | [kuma-type-data on GitCode](https://gitcode.com/weixin_52314137/kuma-type-data) | Chinese developer discovery mirror |
+| Bitbucket | [kuma-type-data on Bitbucket](https://bitbucket.org/nano-products/kuma-type-data) | Bitbucket mirror |
+| SourceHut | [kuma-type-data on SourceHut](https://git.sr.ht/~chrisv/kuma-type-data) | Clone-first mirror |
+| Launchpad | [kuma-type-data on Launchpad](https://code.launchpad.net/~nano-products/+git/kuma-type-data) | Branch-oriented mirror |
+| Disroot Git | [kuma-type-data on Disroot](https://git.disroot.org/nano-products/kuma-type-data) | Low-noise mirror |
+
+## Scoring Capabilities
 
 Answers are expected as numbers from `-2` to `2`. Each question belongs to one axis: `EI`, `SN`, `TF`, or `JP`. Positive answers add points to the question's positive pole. Negative answers add points to the opposite pole. The final result code is built from the winning pole on each axis.
 
@@ -52,12 +98,6 @@ import questions from "./data/questions.json" with { type: "json" };
 import { calculateKumaResultCode } from "./src/scoring.mjs";
 
 const resultCode = calculateKumaResultCode([2, 1, 0, -1, -2], questions);
-```
-
-Run the public checks with:
-
-```bash
-npm test
 ```
 
 ## Boundary
@@ -77,7 +117,12 @@ Excluded:
 - Google Analytics, payment, checkout, database, or provider configuration.
 - Debug captures and local runtime artifacts.
 
+## Support And Security
+
+Use GitHub issues for public-safe corrections to question data, type records, compatibility behavior, public asset references, or documentation.
+
+Do not post private account data, payment details, analytics exports, security vulnerabilities, private logs, or private website source in public issues. For private support or security-sensitive reports, email [Kuma Type Shindan support](mailto:support@kumatype-shindan.xyz).
+
 ## Independence Notice
 
 The Kuma Type Shindan guide is an independent guide for people searching for KUMA x 16 LOVE TYPES, result lists, and compatibility explanations. It is not operated by the official KUMA site, NOIZU, or the rights holders.
-
