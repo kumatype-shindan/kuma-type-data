@@ -29,15 +29,15 @@ Kuma Type Shindan is a browser quiz and public reference site, but the quiz data
 
 ## Data And Tool Catalog
 
-| Resource | Purpose | Key Detail | Link |
+| Resource | Purpose | Key Detail | Path |
 | --- | --- | --- | --- |
-| Questions | Quiz model review | 20 public questions with axis and positive-pole metadata | [questions.json](data/questions.json) |
-| Kuma types | Result content review | 16 type records with names, slugs, descriptions, traits, groups, and compatibility links | [kuma-types.json](data/kuma-types.json) |
-| Asset manifest | Public asset audit | Image and font source metadata carried over from the site project | [asset-manifest.json](data/asset-manifest.json) |
-| Scoring helper | Result reproduction | Public JavaScript helper for result and compatibility calculations | [scoring.mjs](src/scoring.mjs) |
-| Scoring docs | Human-readable rules | Axis scoring, tie behavior, compatibility scoring, and labels | [scoring documentation](docs/scoring.md) |
-| Boundary docs | Public/private split | What this repository intentionally includes and excludes | [public boundary](docs/public-boundary.md) |
-| Public checks | Regression safety | Node tests for scoring and repository boundary expectations | [tests](tests) |
+| Questions | Quiz model review | 20 public questions with axis and positive-pole metadata | `data/questions.json` |
+| Kuma types | Result content review | 16 type records with names, slugs, descriptions, traits, groups, and compatibility links | `data/kuma-types.json` |
+| Asset manifest | Public asset audit | Image and font source metadata carried over from the site project | `data/asset-manifest.json` |
+| Scoring helper | Result reproduction | Public JavaScript helper for result and compatibility calculations | `src/scoring.mjs` |
+| Scoring docs | Human-readable rules | Axis scoring, tie behavior, compatibility scoring, and labels | `docs/scoring.md` |
+| Boundary docs | Public/private split | What this repository intentionally includes and excludes | `docs/public-boundary.md` |
+| Public checks | Regression safety | Node tests for scoring and repository boundary expectations | `tests/` |
 
 ## Use Cases
 
@@ -49,8 +49,8 @@ Kuma Type Shindan is a browser quiz and public reference site, but the quiz data
 
 ## Getting Started In 3 Steps
 
-1. Review the data files in [data](data), especially [questions.json](data/questions.json) and [kuma-types.json](data/kuma-types.json).
-2. Read [docs/scoring.md](docs/scoring.md) or import [src/scoring.mjs](src/scoring.mjs) to reproduce the result behavior.
+1. Review the data files in `data/`, especially `data/questions.json` and `data/kuma-types.json`.
+2. Read `docs/scoring.md` or import `src/scoring.mjs` to reproduce the result behavior.
 3. Run the public checks before proposing data or scoring changes:
 
 ```bash
