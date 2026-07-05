@@ -29,12 +29,12 @@ Kuma Type Shindan is a browser quiz and public reference site, but the quiz data
 
 ## Official Site Features
 
-- Kuma Love Type Quiz: Answer 20 questions in about 1-2 minutes and get one of 16 bear romance types.
-- 16 type list: Review each type name, MBTI-style code, romance tendency, and compatibility reading.
-- Compatibility tool: Choose two Kuma types and compare their compatibility score and interpretation.
-- Love Character 64: A newer 64-result romance character quiz based on distance, affection style, realism, freedom, and future orientation in relationships.
-- Love Character 64 results: Browse all 64 result images, type codes, and short romance summaries.
-- 3D KUMA: Compare the 16 types as plush-style and clay-figure-style 3D images.
+- [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en): Answer 20 questions in about 1-2 minutes and get one of 16 bear romance types.
+- [Kuma 16 type result list](https://kumatype-shindan.xyz/en/types): Review each type name, MBTI-style code, romance tendency, and compatibility reading.
+- [Kuma compatibility score tool](https://kumatype-shindan.xyz/en/compatibility): Choose two Kuma types and compare their compatibility score and interpretation.
+- [Love Character 64](https://kumatype-shindan.xyz/en/lovecharacter64): A newer 64-result romance character quiz based on distance, affection style, realism, freedom, and future orientation in relationships.
+- [Love Character 64 results](https://kumatype-shindan.xyz/en/lovecharacter64/results): Browse all 64 result images, type codes, and short romance summaries.
+- [3D KUMA](https://kumatype-shindan.xyz/en/3d-bears): Compare the 16 types as plush-style and clay-figure-style 3D images.
 
 ## Changelog
 
@@ -78,18 +78,6 @@ npm test
 ![Kuma Type Shindan desktop quiz home](assets/screenshots/home-desktop.png)
 
 Additional public screenshots are available for the [16 type list](assets/screenshots/types-mobile.png), [compatibility tool](assets/screenshots/compatibility-mobile.png), and [result page](assets/screenshots/result-mobile.png).
-
-## Official Links
-
-| Destination | Link |
-| --- | --- |
-| Official English quiz website | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
-| Japanese main website | [恋するへびべあ診断](https://kumatype-shindan.xyz) |
-| English 16 type hub | [Kuma 16 type result list](https://kumatype-shindan.xyz/en/types) |
-| English compatibility tool | [Kuma compatibility score tool](https://kumatype-shindan.xyz/en/compatibility) |
-| Primary GitHub repository | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
-| Public support guide | [SUPPORT.md](SUPPORT.md) |
-| Security reporting guide | [SECURITY.md](SECURITY.md) |
 
 ## Official Mirrors
 
