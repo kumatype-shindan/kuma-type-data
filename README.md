@@ -6,13 +6,13 @@
 
 # Kuma Type Shindan Data
 
-Public data, image assets, and scoring rules for the independent [Kuma Type Shindan guide](https://kumatype-shindan.xyz). This repository lets developers, quiz writers, localization reviewers, and users inspect how the guide represents the 20-question love-type model, the 16 bear-type records, compatibility rules, and public reference assets.
+Public data, image assets, and scoring rules for [Kuma Type Shindan](https://kumatype-shindan.xyz), an independent quiz and reference site. This repository lets developers, quiz writers, localization reviewers, and users inspect how the site represents the 20-question Kuma love type quiz, the 16 bear-type records, the result list, compatibility scores, and public reference assets.
 
 This is not the full Next.js website source. It does not include deployment configuration, environment files, analytics setup, payment code, internal UI components, or private operational material.
 
 ## Why This Repository Exists
 
-Kuma Type Shindan is a browser guide, but the quiz data and scoring behavior should be easy to inspect without exposing the private production application. This public package provides:
+Kuma Type Shindan is a browser quiz and public reference site, but the quiz data and scoring behavior should be easy to inspect without exposing the private production application. This public package provides:
 
 - Transparent question, type, compatibility, and scoring data.
 - Public image and screenshot references for documentation review.
@@ -26,7 +26,7 @@ Kuma Type Shindan is a browser guide, but the quiz data and scoring behavior sho
 | --- | --- | --- | --- |
 | Questions | Quiz model review | 20 public questions with axis and positive-pole metadata | [questions.json](data/questions.json) |
 | Kuma types | Result content review | 16 type records with names, slugs, descriptions, traits, groups, and compatibility links | [kuma-types.json](data/kuma-types.json) |
-| Asset manifest | Public asset audit | Image and font source metadata carried over from the guide project | [asset-manifest.json](data/asset-manifest.json) |
+| Asset manifest | Public asset audit | Image and font source metadata carried over from the site project | [asset-manifest.json](data/asset-manifest.json) |
 | Scoring helper | Result reproduction | Public JavaScript helper for result and compatibility calculations | [scoring.mjs](src/scoring.mjs) |
 | Scoring docs | Human-readable rules | Axis scoring, tie behavior, compatibility scoring, and labels | [scoring documentation](docs/scoring.md) |
 | Boundary docs | Public/private split | What this repository intentionally includes and excludes | [public boundary](docs/public-boundary.md) |
@@ -60,10 +60,10 @@ Additional public screenshots are available for the [16 type list](assets/screen
 
 | Destination | Link |
 | --- | --- |
-| Official guide website | [Kuma Type Shindan guide](https://kumatype-shindan.xyz) |
-| English guide homepage | [KUMA Love Type Quiz Guide](https://kumatype-shindan.xyz/en) |
-| 16 type hub | [Kuma Type 16 results list](https://kumatype-shindan.xyz/types) |
-| Compatibility guide | [Kuma Type compatibility tool](https://kumatype-shindan.xyz/compatibility) |
+| Official quiz website | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
+| English quiz homepage | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
+| 16 type hub | [Kuma 16 type result list](https://kumatype-shindan.xyz/types) |
+| Compatibility tool | [Kuma compatibility score tool](https://kumatype-shindan.xyz/compatibility) |
 | Primary GitHub repository | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
 | Public support guide | [SUPPORT.md](SUPPORT.md) |
 | Security reporting guide | [SECURITY.md](SECURITY.md) |
@@ -122,4 +122,4 @@ Do not post private account data, payment details, analytics exports, security v
 
 ## Independence Notice
 
-The Kuma Type Shindan guide is an independent guide for people searching for KUMA x 16 LOVE TYPES, result lists, and compatibility explanations. It is not operated by the official KUMA site, NOIZU, or the rights holders.
+The Kuma Type Shindan site is an independent quiz and reference site for people searching for KUMA x 16 LOVE TYPES, Kuma love type quiz questions, 16 Kuma type records, result lists, and compatibility score explanations. It is not operated by the official KUMA site, NOIZU, or the rights holders.

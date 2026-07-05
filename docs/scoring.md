@@ -1,6 +1,6 @@
 # Scoring Rules
 
-This repository publishes the data and rules needed to reproduce the Kuma Type Shindan guide result calculation.
+This repository publishes the data and rules needed to reproduce the Kuma Type Shindan result calculation.
 
 ## Question Format
 
@@ -46,4 +46,3 @@ Score labels:
 - `88` and above: `最高に噛み合う相性`
 - `78` to `87`: `かなり心地いい相性`
 - below `78`: `ゆっくり育つ相性`
-

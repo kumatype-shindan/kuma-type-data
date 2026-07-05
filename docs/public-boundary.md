@@ -23,5 +23,4 @@ This repository is intentionally a public data package, not the private website 
 
 ## Asset Notice
 
-This repository includes public reference images used by the independent guide. The repository does not claim ownership of third-party KUMA, NOIZU, HeavyBear, or rights-holder marks and artwork. Use the assets responsibly and keep attribution and rights-holder context intact.
-
+This repository includes public reference images used by the independent site. The repository does not claim ownership of third-party KUMA, NOIZU, HeavyBear, or rights-holder marks and artwork. Use the assets responsibly and keep attribution and rights-holder context intact.
