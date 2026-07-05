@@ -27,6 +27,22 @@ Kuma Type Shindan is a browser quiz and public reference site, but the quiz data
 - Tests that keep the public package shape and private-source boundary stable.
 - A safe issue route for data corrections, documentation fixes, and public asset feedback.
 
+## Official Site Features
+
+- Kuma Love Type Quiz: Answer 20 questions in about 1-2 minutes and get one of 16 bear romance types.
+- 16 type list: Review each type name, MBTI-style code, romance tendency, and compatibility reading.
+- Compatibility tool: Choose two Kuma types and compare their compatibility score and interpretation.
+- Love Character 64: A newer 64-result romance character quiz based on distance, affection style, realism, freedom, and future orientation in relationships.
+- Love Character 64 results: Browse all 64 result images, type codes, and short romance summaries.
+- 3D KUMA: Compare the 16 types as plush-style and clay-figure-style 3D images.
+
+## Changelog
+
+- 2026-07: Added Love Character 64 with a 64-result romance character quiz and result gallery.
+- 2026-07: Added Love Character 64 result pages and share-image support.
+- 2026-07: Made the Japanese README authoritative and added English and Simplified Chinese translations.
+- 2026-07: Replaced the README homepage preview with a clean first-screen screenshot without the language modal.
+
 ## Data And Tool Catalog
 
 | Resource | Purpose | Key Detail | Path |
