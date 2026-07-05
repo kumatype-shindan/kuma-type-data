@@ -1,94 +1,98 @@
 <p align="center">
   <a href="https://kumatype-shindan.xyz">
-    <img src="assets/logo/favicon.ico" alt="Kuma Type Shindan bear logo" width="72" height="72">
+    <img src="assets/logo/favicon.ico" alt="Kuma Type Shindan のロゴ" width="72" height="72">
   </a>
 </p>
 
-# Kuma Type Shindan Data
+# Kuma Type Shindan データ
 
-Public data, image assets, and scoring rules for [Kuma Type Shindan](https://kumatype-shindan.xyz), an independent quiz and reference site. This repository lets developers, quiz writers, localization reviewers, and users inspect how the site represents the 20-question Kuma love type quiz, the 16 bear-type records, the result list, compatibility scores, and public reference assets.
+日本語 | [English](README.en.md) | [简体中文](README.zh-CN.md)
 
-This is not the full Next.js website source. It does not include deployment configuration, environment files, analytics setup, payment code, internal UI components, or private operational material.
+この日本語 README が公式基準です。翻訳版との差異がある場合は、この日本語版を優先します。
 
-## Why This Repository Exists
+Kuma Type Shindan データは、独立したクイズ・参考サイト [Kuma Type Shindan](https://kumatype-shindan.xyz) の公開データ、画像アセット、スコアリングルールを確認するためのリポジトリです。開発者、クイズ制作者、翻訳レビュー担当者、利用者が、20問の Kuma 恋愛タイプ診断、16種類のベアタイプ、タイプ一覧、相性スコア、公開参考アセットを確認できます。
 
-Kuma Type Shindan is a browser quiz and public reference site, but the quiz data and scoring behavior should be easy to inspect without exposing the private production application. This public package provides:
+これは Next.js で動く本番サイト全体のソースコードではありません。デプロイ設定、環境変数、アナリティクス、決済コード、内部 UI コンポーネント、非公開の運用資料は含みません。
 
-- Transparent question, type, compatibility, and scoring data.
-- Public image and screenshot references for documentation review.
-- A small scoring helper that reproduces the published result behavior.
-- Tests that keep the public package shape and private-source boundary stable.
-- A safe issue route for data corrections, documentation fixes, and public asset feedback.
+## このリポジトリの目的
 
-## Data And Tool Catalog
+Kuma Type Shindan はブラウザで使える診断と公開参考サイトですが、クイズデータとスコア計算のふるまいは、本番アプリを公開しなくても確認できるべきです。この公開パッケージには次の内容が含まれます。
 
-| Resource | Purpose | Key Detail | Link |
+- 質問、タイプ、相性、スコアリングの透明な公開データ。
+- ドキュメント確認用の公開画像とスクリーンショット。
+- 公開されている結果計算を再現する小さなスコアリングヘルパー。
+- 公開パッケージの形と private/source 境界を守るテスト。
+- データ修正、ドキュメント修正、公開アセットのフィードバック用ルート。
+
+## データとツール
+
+| リソース | 目的 | 主な内容 | リンク |
 | --- | --- | --- | --- |
-| Questions | Quiz model review | 20 public questions with axis and positive-pole metadata | [questions.json](data/questions.json) |
-| Kuma types | Result content review | 16 type records with names, slugs, descriptions, traits, groups, and compatibility links | [kuma-types.json](data/kuma-types.json) |
-| Asset manifest | Public asset audit | Image and font source metadata carried over from the site project | [asset-manifest.json](data/asset-manifest.json) |
-| Scoring helper | Result reproduction | Public JavaScript helper for result and compatibility calculations | [scoring.mjs](src/scoring.mjs) |
-| Scoring docs | Human-readable rules | Axis scoring, tie behavior, compatibility scoring, and labels | [scoring documentation](docs/scoring.md) |
-| Boundary docs | Public/private split | What this repository intentionally includes and excludes | [public boundary](docs/public-boundary.md) |
-| Public checks | Regression safety | Node tests for scoring and repository boundary expectations | [tests](tests) |
+| 質問データ | クイズモデル確認 | 20問の質問、軸、positive pole メタデータ | [questions.json](data/questions.json) |
+| Kuma タイプ | 結果コンテンツ確認 | 16タイプの名前、slug、説明、特徴、グループ、相性リンク | [kuma-types.json](data/kuma-types.json) |
+| アセット manifest | 公開アセット確認 | サイトプロジェクトから持ち出した画像・フォントの出典メタデータ | [asset-manifest.json](data/asset-manifest.json) |
+| スコアリングヘルパー | 結果再現 | 結果コードと相性計算の公開 JavaScript ヘルパー | [scoring.mjs](src/scoring.mjs) |
+| スコアリング仕様 | 人間向けルール | 軸スコア、同点時の挙動、相性スコア、ラベル | [docs/scoring.md](docs/scoring.md) |
+| 公開境界 | public/private 分離 | このリポジトリに含めるものと除外するもの | [docs/public-boundary.md](docs/public-boundary.md) |
+| 公開チェック | 回帰防止 | スコアリングと公開境界の Node テスト | [tests](tests) |
 
-## Use Cases
+## 使いどころ
 
-- Inspect which question maps to which `EI`, `SN`, `TF`, or `JP` axis.
-- Reproduce the result-code calculation outside the live website.
-- Review all 16 Kuma type records and public compatibility relationships.
-- Check why a neutral answer set resolves to `INFP`.
-- Report public data, documentation, or asset-reference corrections without posting private account or security details.
+- どの質問が `EI`、`SN`、`TF`、`JP` のどの軸に対応するか確認する。
+- ライブサイトの外で結果コード計算を再現する。
+- 16種類の Kuma タイプと公開相性関係をレビューする。
+- すべて中立回答のときに `INFP` へ解決される理由を確認する。
+- 非公開のアカウント情報やセキュリティ情報を出さずに、公開データやドキュメントの修正を報告する。
 
-## Getting Started In 3 Steps
+## はじめ方
 
-1. Review the data files in [data](data), especially [questions.json](data/questions.json) and [kuma-types.json](data/kuma-types.json).
-2. Read [docs/scoring.md](docs/scoring.md) or import [src/scoring.mjs](src/scoring.mjs) to reproduce the result behavior.
-3. Run the public checks before proposing data or scoring changes:
+1. [data](data) のデータファイル、特に [questions.json](data/questions.json) と [kuma-types.json](data/kuma-types.json) を確認します。
+2. [docs/scoring.md](docs/scoring.md) を読むか、[src/scoring.mjs](src/scoring.mjs) を import して結果計算を再現します。
+3. データやスコアリングの変更を提案する前に公開チェックを実行します。
 
 ```bash
 npm test
 ```
 
-## Visual Preview
+## プレビュー
 
-![Kuma Type Shindan desktop quiz home](assets/screenshots/home-desktop.png)
+![Kuma Type Shindan のデスクトップ診断ホーム](assets/screenshots/home-desktop.png)
 
-Additional public screenshots are available for the [16 type list](assets/screenshots/types-mobile.png), [compatibility tool](assets/screenshots/compatibility-mobile.png), and [result page](assets/screenshots/result-mobile.png).
+追加の公開スクリーンショットとして、[16タイプ一覧](assets/screenshots/types-mobile.png)、[相性診断](assets/screenshots/compatibility-mobile.png)、[結果ページ](assets/screenshots/result-mobile.png) があります。
 
-## Official Links
+## 公式リンク
 
-| Destination | Link |
+| 目的 | リンク |
 | --- | --- |
-| Official quiz website | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
-| English quiz homepage | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
-| 16 type hub | [Kuma 16 type result list](https://kumatype-shindan.xyz/types) |
-| Compatibility tool | [Kuma compatibility score tool](https://kumatype-shindan.xyz/compatibility) |
-| Primary GitHub repository | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
-| Public support guide | [SUPPORT.md](SUPPORT.md) |
-| Security reporting guide | [SECURITY.md](SECURITY.md) |
+| 公式診断サイト | [Kuma Type Shindan](https://kumatype-shindan.xyz) |
+| 英語版ホーム | [KUMA Love Type Quiz](https://kumatype-shindan.xyz/en) |
+| 16タイプ一覧 | [Kuma 16タイプ一覧](https://kumatype-shindan.xyz/types) |
+| 相性診断 | [Kuma 相性スコア診断](https://kumatype-shindan.xyz/compatibility) |
+| 主 GitHub リポジトリ | [Kuma Type Shindan Data on GitHub](https://github.com/kumatype-shindan/kuma-type-data) |
+| サポート案内 | [SUPPORT.md](SUPPORT.md) |
+| セキュリティ報告 | [SECURITY.md](SECURITY.md) |
 
-## Official Mirrors
+## 公式ミラー
 
-GitHub is the canonical public repository. Mirrors exist for platform-specific discovery and public-safe feedback routes.
+GitHub が canonical な公開リポジトリです。ほかのミラーは、プラットフォーム別の発見性と公開してよいフィードバックのために用意しています。
 
-| Platform | Link | Purpose |
+| プラットフォーム | リンク | 目的 |
 | --- | --- | --- |
-| GitHub | [kumatype-shindan/kuma-type-data](https://github.com/kumatype-shindan/kuma-type-data) | Canonical public data package |
-| GitLab | [nano-products/kuma-type-data on GitLab](https://gitlab.com/nano-products/kuma-type-data) | GitLab mirror and issue context |
-| Codeberg | [nano-products/kuma-type-data on Codeberg](https://codeberg.org/nano-products/kuma-type-data) | Forgejo/Codeberg discovery mirror |
-| Gitee | [kuma-type-data on Gitee](https://gitee.com/nano-products/kuma-type-data) | Chinese platform mirror |
-| GitCode | [kuma-type-data on GitCode](https://gitcode.com/weixin_52314137/kuma-type-data) | Chinese developer discovery mirror |
-| Bitbucket | [kuma-type-data on Bitbucket](https://bitbucket.org/nano-products/kuma-type-data) | Bitbucket mirror |
-| SourceHut | [kuma-type-data on SourceHut](https://git.sr.ht/~chrisv/kuma-type-data) | Clone-first mirror |
-| Launchpad | [kuma-type-data on Launchpad](https://code.launchpad.net/~nano-products/+git/kuma-type-data) | Branch-oriented mirror |
-| Disroot Git | [kuma-type-data on Disroot](https://git.disroot.org/nano-products/kuma-type-data) | Low-noise mirror |
+| GitHub | [kumatype-shindan/kuma-type-data](https://github.com/kumatype-shindan/kuma-type-data) | canonical 公開データパッケージ |
+| GitLab | [GitLab の kuma-type-data](https://gitlab.com/nano-products/kuma-type-data) | GitLab 向けミラーと issue 文脈 |
+| Codeberg | [Codeberg の kuma-type-data](https://codeberg.org/nano-products/kuma-type-data) | Forgejo/Codeberg 向け発見ミラー |
+| Gitee | [Gitee の kuma-type-data](https://gitee.com/nano-products/kuma-type-data) | 中国語プラットフォーム向けミラー |
+| GitCode | [GitCode の kuma-type-data](https://gitcode.com/weixin_52314137/kuma-type-data) | 中国語開発者向け発見ミラー |
+| Bitbucket | [Bitbucket の kuma-type-data](https://bitbucket.org/nano-products/kuma-type-data) | Bitbucket 向けミラー |
+| SourceHut | [SourceHut の kuma-type-data](https://git.sr.ht/~chrisv/kuma-type-data) | clone-first ミラー |
+| Launchpad | [Launchpad の kuma-type-data](https://code.launchpad.net/~nano-products/+git/kuma-type-data) | ブランチ指向ミラー |
+| Disroot Git | [Disroot Git の kuma-type-data](https://git.disroot.org/nano-products/kuma-type-data) | 低ノイズのミラー |
 
-## Scoring Capabilities
+## スコアリング
 
-Answers are expected as numbers from `-2` to `2`. Each question belongs to one axis: `EI`, `SN`, `TF`, or `JP`. Positive answers add points to the question's positive pole. Negative answers add points to the opposite pole. The final result code is built from the winning pole on each axis.
+回答は `-2` から `2` の数値です。各質問は `EI`、`SN`、`TF`、`JP` のいずれかの軸に属します。positive な回答は質問の positive pole に加点され、negative な回答は反対側の pole に加点されます。最終結果コードは各軸で勝った pole を組み合わせて作られます。
 
-When an axis is tied, the published implementation chooses the second pole because comparisons use `>` rather than `>=`. A fully neutral answer set therefore resolves to `INFP`.
+同点の場合、公開実装は `>=` ではなく `>` を使うため、2番目の pole を選びます。すべて中立回答にすると `INFP` になります。
 
 ```js
 import questions from "./data/questions.json" with { type: "json" };
@@ -97,29 +101,29 @@ import { calculateKumaResultCode } from "./src/scoring.mjs";
 const resultCode = calculateKumaResultCode([2, 1, 0, -1, -2], questions);
 ```
 
-## Boundary
+## 公開境界
 
-Included:
+含まれるもの:
 
-- 20 questions and axis metadata.
-- 16 Kuma type records.
-- Compatibility pair scoring rules.
-- Public image assets and selected preview screenshots.
-- Tests proving the data shape and public boundary.
+- 20問の質問と軸メタデータ。
+- 16種類の Kuma タイプ。
+- 相性ペアのスコアリングルール。
+- 公開画像アセットと一部のプレビュー用スクリーンショット。
+- データ形状と公開境界を検証するテスト。
 
-Excluded:
+含まれないもの:
 
-- `.env` files and deployment secrets.
-- Website application source such as Next.js routes and UI components.
-- Google Analytics, payment, checkout, database, or provider configuration.
-- Debug captures and local runtime artifacts.
+- `.env` ファイルやデプロイ secrets。
+- Next.js routes や UI components などのサイトアプリケーションソース。
+- Google Analytics、決済、checkout、database、provider 設定。
+- デバッグキャプチャやローカル実行アーティファクト。
 
-## Support And Security
+## サポートとセキュリティ
 
-Use GitHub issues for public-safe corrections to question data, type records, compatibility behavior, public asset references, or documentation.
+質問データ、タイプ情報、相性の挙動、公開アセット、ドキュメントに関する公開してよい修正は GitHub Issues を使ってください。
 
-Do not post private account data, payment details, analytics exports, security vulnerabilities, private logs, or private website source in public issues. For private support or security-sensitive reports, email [Kuma Type Shindan support](mailto:support@kumatype-shindan.xyz).
+非公開のアカウント情報、決済情報、アナリティクス出力、セキュリティ脆弱性、private logs、本番サイトの非公開ソースを public issue に投稿しないでください。非公開サポートやセキュリティに関わる報告は [Kuma Type Shindan support](mailto:support@kumatype-shindan.xyz) へ送ってください。
 
-## Independence Notice
+## 独立性について
 
-The Kuma Type Shindan site is an independent quiz and reference site for people searching for KUMA x 16 LOVE TYPES, Kuma love type quiz questions, 16 Kuma type records, result lists, and compatibility score explanations. It is not operated by the official KUMA site, NOIZU, or the rights holders.
+Kuma Type Shindan は、KUMA x 16 LOVE TYPES、Kuma love type quiz questions、16 Kuma type records、result lists、compatibility score explanations を探す人向けの独立したクイズ・参考サイトです。公式 KUMA サイト、NOIZU、または権利者によって運営されているものではありません。
