@@ -52,12 +52,9 @@ npm test
 
 ## Visual Preview
 
-| Surface | Preview |
-| --- | --- |
-| Quiz home | ![Kuma Type Shindan desktop quiz home](assets/screenshots/home-desktop.png) |
-| 16 type list | ![Kuma Type Shindan mobile type list](assets/screenshots/types-mobile.png) |
-| Compatibility tool | ![Kuma Type Shindan compatibility tool](assets/screenshots/compatibility-mobile.png) |
-| Result page | ![Kuma Type Shindan result page](assets/screenshots/result-mobile.png) |
+![Kuma Type Shindan desktop quiz home](assets/screenshots/home-desktop.png)
+
+Additional public screenshots are available for the [16 type list](assets/screenshots/types-mobile.png), [compatibility tool](assets/screenshots/compatibility-mobile.png), and [result page](assets/screenshots/result-mobile.png).
 
 ## Official Links
 
